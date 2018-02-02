@@ -13,7 +13,7 @@ public class DaemonSDontRunFinally {
     }
 }
 
-class ADaemon implements Runnable{
+class ADaemon implements Runnable {
 
     @Override
     public void run() {
