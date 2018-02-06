@@ -4,12 +4,12 @@ import java.util.concurrent.TimeUnit;
 
 import static net.mindview.util.Print.*;
 
-public class DaemonSDontRunFinally {
+public class DaemonsDontRunFinally {
     public static void main(String[] args) throws Exception {
         Thread t = new Thread(new ADaemon());
         t.setDaemon(true);
         t.start();
-//        TimeUnit.SECONDS.sleep(2);
+        TimeUnit.SECONDS.sleep(2);
     }
 }
 
